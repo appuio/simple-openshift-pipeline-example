@@ -7,6 +7,8 @@ node {
         echo "Test"
 	sleep 2
     }
+}
+node ('maven') {    
     stage('DeployDev') {
         echo "Deploy to Dev"
 	sleep 5
@@ -20,6 +22,7 @@ node {
 	sleep 5
     }
 }
+
     
 
 
