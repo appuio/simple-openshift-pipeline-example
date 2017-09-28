@@ -1,17 +1,11 @@
-kind: BuildConfig
-apiVersion: v1
+kind: "BuildConfig"
+apiVersion: "v1"
 metadata:
-  name: appuio-sample-pipeline
-  labels:
-    name: appuio-sample-pipeline
+  name: "appuio-sample-pipeline"
 spec:
   source:
     git:
-      ref: master
-      uri: https://github.com/appuio/simple-openshift-pipeline-example.git
-    type: Git
-strategy:
-  type: JenkinsPipeline
-  jenkinsPipelineStrategy:
-    jenkinsfilePath: Jenkinsfile
-
+      uri: "https://github.com/appuio/simple-openshift-pipeline-example.git"
+  strategy:
+    jenkinsPipelineStrategy:
+      jenkinsfilePath: Jenkinsfile
