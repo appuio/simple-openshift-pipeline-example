@@ -2,7 +2,7 @@
 
 This simple Example shows how OpenShift Pipelines works
 
-## Create Projekt
+## Create Project
 
 First you need to create a new OpenShift project
 
